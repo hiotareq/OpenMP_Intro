@@ -1,0 +1,4 @@
+/home/b3/Desktop/studyProjects/OpenMpintro/1task/build/CMakeFiles/task1_main.dir
+/home/b3/Desktop/studyProjects/OpenMpintro/1task/build/CMakeFiles/task1_add.dir
+/home/b3/Desktop/studyProjects/OpenMpintro/1task/build/CMakeFiles/edit_cache.dir
+/home/b3/Desktop/studyProjects/OpenMpintro/1task/build/CMakeFiles/rebuild_cache.dir
