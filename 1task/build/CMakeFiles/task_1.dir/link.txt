@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/task_1.dir/task1_main.cpp.o -o /home/b3/Desktop/studyProjects/OpenMpintro/1task/task_1  /usr/lib/libgomp.so /usr/lib/libpthread.a 
