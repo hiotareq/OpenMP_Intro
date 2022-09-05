@@ -10,5 +10,7 @@ USAGE:
 1. mkdir CMake
 2. cd CMake
 3. cmake ..
-4. OMP_NUM_THREADS=N ./task1_main
-5. OMP_NUM_THREADS=N ./task1_add
+4. make
+5. cd ..
+6. OMP_NUM_THREADS=N ./task1_main
+7. OMP_NUM_THREADS=N ./task1_add
