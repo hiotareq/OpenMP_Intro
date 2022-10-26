@@ -6,7 +6,7 @@ add_executable(${TASK6_ADD} task6_add.cpp)
 
 find_package(OpenMp)
 if(OpenMP_CXX_FOUND)
-    target_link_libraries(${TASK6_ADD} PRIVATE OpenMp::OpenMP_CXX)
+    target_link_libraries(${TASK6_ADD} PRIVATE OpenMP::OpenMP_CXX)
 endif()
 
 set_target_properties(${TASK6_ADD} PROPERTIES
