@@ -1,0 +1,5 @@
+Problem is that there is a segfault in somewhere in program.
+
+Actions:
+1. Made declarations of i,j, and a inside parallel regions, so now I don't have to declare them private when entering parallel region.
+2. Removed static C-style array with dynamic C++ vector, so now all memory is located in heap. It seems like the problem waas caused just by that, because if I choose not huge N, then programm is working as intended. For that reason , something was happening with memory on the stack and threads could not execute properly. Dynamic allocating solved the problem.

@@ -1,0 +1,1 @@
+Every *.txt file contains explanation to every bug that was in according *.c file

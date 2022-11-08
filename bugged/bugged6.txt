@@ -1,0 +1,6 @@
+Problem: programm is  not compiling.
+
+Actions:
+1. Make "sum" variable global, and delete "sum" variable in dotprod, so now there is no problem with private/shared sum in dotprod and conpiler knows which variables are shared and used in function.
+2. Make dotprod void function, so now it only changes global sum and returns nothing.
+3. programm works as expected: it returns squares of first 99 natural numbers.

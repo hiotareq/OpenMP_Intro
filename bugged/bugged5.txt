@@ -1,0 +1,7 @@
+PROBLEM: there is deadlock for some reason.
+
+Actions:
+1. Change set_lock and unset_lock functions, so order of executions now is always same:
+first thread locks b and updates it and unlocks it, same time second thread locks andupdates a, then second thread locks b and updates that and unlocks.
+After that first thread locks b, a and updates them.
+ Problem was that one of threads was locking one array, second thread locking second but needs to modify first array. Then here is deadlock.

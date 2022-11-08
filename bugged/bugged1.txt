@@ -1,0 +1,3 @@
+Program wasn't compiling with message "error: for statement expected before '{' token.
+
+The problem was that there were brackets after for statement, I deleted that and changed a little bit call to omp, so now we first call omp parallel with its' variables and define "tid" variable inside every thread and secondly we call omp for with for statement right after omp for. 

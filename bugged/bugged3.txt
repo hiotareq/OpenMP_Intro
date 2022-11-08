@@ -1,0 +1,5 @@
+Problem is TLE.
+
+Actions:
+1. Got rid of omp barrier in function "print_results" because that barrier in last executing threads was waiting for threads which did not even start execute this block.
+2. Put last printf into critical section in "print_results" for clear output.

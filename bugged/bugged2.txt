@@ -1,0 +1,9 @@
+Problem is that there is no dynamic distribution between threads.
+
+Actions:
+1. Swap omp barrier and printf, so now it is logically printed.
+2. Added initialization to total before parallel section.
+3. Made "total" variable shared in parallel section.
+4. Added "local" and "tid" variables and made it private in parallel section.
+5. Changed "total" to "local" in omp for statement.
+6. Added critical section where every thread adds its' local result to total.
