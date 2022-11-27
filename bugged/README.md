@@ -1,1 +1,1 @@
-Every *.txt file contains explanation to every bug that according to *.c file
+Every *.txt file contains explanation to every bug according to *.c file
