@@ -24,18 +24,29 @@ mpi_times[13] = 0.806015
 mpi_times[14] = 0.865145
 mpi_times[15] = 0.869698
 
-plt.scatter(mpi_np_number, mpi_times, s = 16)
+# plt.scatter(mpi_np_number, mpi_times, s = 16)
 
-plt.title("MPI graph")
-plt.xlabel("np number")
-plt.ylabel("Execution time of parallel region, sec")
-plt.savefig("MPI_exectime.jpg")
+# plt.title("MPI graph")
+# plt.xlabel("np number")
+# plt.ylabel("Execution time of parallel region, sec")
+# plt.savefig("MPI_exectime.jpg")
 
-# mpi_acceleration = np.empty(16, dtype=np.double)
+mpi_acceleration = np.empty(16, dtype=np.double)
 
-# for i in range(16):
-#     mpi_acceleration[i] = mpi_times[0]/mpi_times[i]
+for i in range(16):
+    mpi_acceleration[i] = mpi_times[0]/mpi_times[i]
 
 # plt.scatter(mpi_np_number, mpi_acceleration, s = 16)
 # plt.title("MPI acceleration")
 # plt.savefig("MPI_acceleration.jpg")
+
+mpi_efficiency = np.empty(16, dtype=np.double)
+
+for i in range(16):
+    mpi_efficiency[i] = mpi_acceleration[i]/mpi_np_number[i]
+
+plt.scatter(mpi_np_number, mpi_efficiency, s= 16)
+plt.title("MPI efficiency")
+plt.xlabel("np number")
+plt.ylabel("Efficency")
+plt.savefig("MPI_efficiency.jpg")
